@@ -1,0 +1,78 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* Want to make sure the entire page is being taken up, want all items centered */
+body {
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: slategray;
+}
+/* Making sure container is centered in the middle of the page */
+.container {
+    width: 100%;
+    max-width: 80%;
+    background-color: white;
+    border: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+}
+/* Making symmetrical answer button layout in 2X2 grid */
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px, 0;
+}
+/* Keeping the color consistent with the background color of the body on the outside of the div */
+.btn {
+    background-color: slategray;
+    color: white;
+}
+/* When hovering over answer choices, makes it obvious which one is being chosen */
+.btn:hover {
+    border-color: black;
+    color: black;
+}
+/* When correct, button becomes green */
+.btn.correct {
+    background-color: lightgreen;
+    color: black
+}
+/* When incorrect, button becomes red */
+.btn.wrong {
+    background-color: red;
+    color: black;
+}
+/* Want these to be larger than other buttons, easy to read */
+.start-btn, .next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 10px;
+}
+/* Want these to be centered */
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Want to be able to toggle .hide on/off depending on where in the quiz we are */
+.hide {
+    display: none;
+}
+/* Want these in the bottom right hand corner away from main content */
+.displays {
+    float: right;
+    padding-top: 5px;
+}
+/* Easy to read which number correlates to its respecitve text */
+#score,
+#time {
+    color: red;
+}
