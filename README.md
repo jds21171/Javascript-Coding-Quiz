@@ -1,3 +1,7 @@
+# Javascript Coding Quiz
+
+A simple web-app that allows you to take a quiz about javascript. Once you hit start, a timer will begin counting down and you must finish the quiz before the timer runs out. If you don't, the quiz will end for you. After you answer each question, the correct answer will appear green and the incorrect answers will appear red. You get points for correct answers. After you have completed the quiz or time as run out, your score will be displayed for you to see. You can experience the deployed project here: https://jds21171.github.io/Javascript-Coding-Quiz/
+
 ## User Story
 
 ```
